@@ -2,14 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                // Checkout your Java code repository
-                // Replace the repository URL below with your actual repository URL
-                git 'https://github.com/Nagavamshia/Jenkins-Zero-To-Hero/myprgm.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 // Compile the Java code

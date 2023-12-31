@@ -6,7 +6,7 @@ pipeline {
             steps {
                 // Checkout your Java code repository
                 // Replace the repository URL below with your actual repository URL
-                git 'https://github.com/Nagavamshia/Jenkins-Zero-To-Hero.git'
+                git 'https://github.com/Nagavamshia/Jenkins-Zero-To-Hero/myprgm.git'
             }
         }
 

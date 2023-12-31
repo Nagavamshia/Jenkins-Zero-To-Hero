@@ -1,6 +1,12 @@
 pipeline {
     agent any
     stages {
+         stage('checkout') {
+            steps {
+                // Checkout the code
+                git branch: 'main', changelog: false, poll: false, url: 'https://github.com/Nagavamshia/Jenkins-Zero-To-Hero.git'
+            }
+        }
         stage('Build') {
             steps {
                 // Compile the Java code
